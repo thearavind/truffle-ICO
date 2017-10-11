@@ -2,6 +2,7 @@
 
 This is an simple implementation of the ERC-20 token crowdsale using the truffle framework
 
+Checkout this [web app](https://gateway.ipfs.io/ipfs/QmeWaYteq9W85afmRsRv1xtgEsD1yKDZp3gLemAcYVfTyQ/) for more details and to check the token balance
 
 ### To participate in this ICO crowdsale
 * Use only the **Ropsten testnet**
@@ -18,3 +19,10 @@ The token sale will be open for 1 Year and you will receive **10 ART tokens for 
 * Decimals of precision - 18
 
 ![Token](https://image.ibb.co/gxdzOw/Screenshot_from_2017_10_04_18_38_08.png)
+
+
+### To deploy the contracts
+`truffle compile && truffle migrate --network ropsten`
+
+### To build webpack
+`webpack ./index.js ./bundle.js`
