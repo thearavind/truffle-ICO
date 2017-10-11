@@ -1,0 +1,253 @@
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1617;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+.countdown-timer-wrapper {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+  max-width: 300px;
+  margin: 25px auto;
+}
+
+.countdown-timer-wrapper h5 {
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding-top: 10px;
+  text-shadow: none;
+}
+
+.countdown-timer-wrapper .timer {
+  padding: 10px;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.countdown-timer-wrapper .timer .timer-wrapper {
+  display: inline-block;
+  width: 60px;
+  height: 50px;
+}
+
+.countdown-timer-wrapper .timer .timer-wrapper .time {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.countdown-timer-wrapper .timer .timer-wrapper .text {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+h1 { margin:150px auto; text-align:center;}
+
+
+/* ---- Loader css ---- */
+.overlay-loader {
+  display: block;
+  margin: auto;
+  width: 363px;
+  height: 363px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 363px;
+  height: 363px;
+  animation-name: rotateAnim;
+  -o-animation-name: rotateAnim;
+  -ms-animation-name: rotateAnim;
+  -webkit-animation-name: rotateAnim;
+  -moz-animation-name: rotateAnim;
+  animation-duration: 0.2275s;
+  -o-animation-duration: 0.2275s;
+  -ms-animation-duration: 0.2275s;
+  -webkit-animation-duration: 0.2275s;
+  -moz-animation-duration: 0.2275s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+}
+.loader div {
+  width: 29px;
+  height: 29px;
+  border-radius: 50%;
+  border: 4px solid wheat;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.loader div:nth-child(odd) {
+  border-top: none;
+  border-left: none;
+}
+.loader div:nth-child(even) {
+  border-bottom: none;
+  border-right: none;
+}
+.loader div:nth-child(2) {
+  border-width: 7px;
+  left: 0px;
+  top: -15px;
+  width: 44px;
+  height: 44px;
+}
+.loader div:nth-child(3) {
+  border-width: 7px;
+  left: -4px;
+  top: 11px;
+  width: 65px;
+  height: 65px;
+}
+.loader div:nth-child(4) {
+  border-width: 11px;
+  left: -4px;
+  top: -15px;
+  width: 87px;
+  height: 87px;
+}
+.loader div:nth-child(5) {
+  border-width: 11px;
+  left: -4px;
+  top: 15px;
+  width: 116px;
+  height: 116px;
+}
+.loader div:nth-child(6) {
+  border-width: 15px;
+  left: 0px;
+  top: -15px;
+  width: 145px;
+  height: 145px;
+}
+.loader div:nth-child(7) {
+  border-width: 15px;
+  left: 0px;
+  top: 22px;
+  width: 181px;
+  height: 181px;
+}
+
+
+@keyframes rotateAnim {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@-o-keyframes rotateAnim {
+  from {
+    -o-transform: rotate(360deg);
+  }
+  to {
+    -o-transform: rotate(0deg);
+  }
+}
+
+@-ms-keyframes rotateAnim {
+  from {
+    -ms-transform: rotate(360deg);
+  }
+  to {
+    -ms-transform: rotate(0deg);
+  }
+}
+
+@-webkit-keyframes rotateAnim {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+@-moz-keyframes rotateAnim {
+  from {
+    -moz-transform: rotate(360deg);
+  }
+  to {
+    -moz-transform: rotate(0deg);
+  }
+}

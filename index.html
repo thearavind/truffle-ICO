@@ -1,0 +1,71 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Aravind Token Sale</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<link rel="icon" href="src/img/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="src/css/styles.css">
+<script type="text/javascript" src="src/js/particles.min.js" charset="utf-8"></script>
+<script src="src/js/jquery-3.2.1.slim.min.js"></script>
+<script src="src/js/countdown-timer.min.js"></script>
+<script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+<body>
+<div id="particles-js"> </div>
+
+<div id="loadingAnim" class="overlay-loader" style="position: absolute;background: #1e1617;opacity: 0.9;
+            height: 100%;width: 100%;z-index: 9999; overflow:hidden">
+    <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+
+<div style="text-align:center; position:absolute;width: 100%;height: 100%;">
+    <a style="display: block;margin-top: 30px;" href="#"><img style="width: 90px;" src="src/img/chip.png"></a>
+    <p id="status" style="color:white; font-size:30px;margin-top: 15px;display: inline-block;"></p>
+    <div class="countdown-timer-wrapper">
+        <div class="timer" id="countdown"></div>
+    </div>
+    <h3 id="amount" style="color:aliceblue;">Total funds collected through ICO : </h3>
+    <h3 id="supply" style="color:aliceblue;">Total supply of ART tokens : </h3>
+    <h3 style="color:aliceblue;">All the ethers earned by this token sale will be deposited automatically to
+        <span id="wallet-address"></span></h3>
+    <div>
+        <input style="min-width:350px;min-height: 30px;" id="account-num" type="text">
+        <button id="balance" style="min-height: 36px;">Check token balance</button>
+    </div>
+    <p style="min-height:30px;" id="check-bal"></p>
+    <div style="float: left;width: 100%;">
+        <div style="width: 49%; margin: 5px; min-height:180px; float: left; color:white; background-color:black; opacity:0.5">
+            <h2>To participate in this token sale</h2>
+            <ul style="text-align:left; line-height: 1.5; font-size:16px;">
+                <li>Use only the Ropsten testnet</li>
+                <li>Send ethers to this contract address <span id="contract-address"></span></li>
+                <li>Set the gas limit as 150000</li>
+                <li>1 ETH = <span id="rate"></span> ART</li>
+                <li>ART tokens will be deposited automatically to the senders account</li>
+            </ul>
+        </div>
+        <div style="width: 49%; margin: 5px; min-height:180px; float: left; color:white; background-color:black; opacity:0.5">
+            <h2>Aravind token details</h2>
+            <ul style="text-align:left; line-height: 1.5; font-size:16px;">
+                <li>Token address - <span id="token-address"></span></li>
+                <li>Token name - <span id="token-name"></span></li>
+                <li>Token Symbol - <span id="token-symbol"></span></li>
+                <li>Decimals of precision - <span id="token-decimals"></span></li></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="src/js/particles.config.js" charset="utf-8"></script>
+</html>
